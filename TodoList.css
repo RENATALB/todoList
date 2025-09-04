@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: brown;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    margin: 0;
+    width: 75%;
+    padding: 10px;
+}
+
+.agrerarBtn {
+    padding: 10px;
+    width: 25%;
+    background-color: coral;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+} 
+
+ul {
+    background-color: aquamarine;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul li:hover {
+    background-color: blue;
+}

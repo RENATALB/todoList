@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>todolist</title>
+    <script src="TodoList.js"></script>
+    <link rel="stylesheet" href="TodoList.css">
 </head>
-<body>
+<body>    
+    <header class="header">
+        <h2>Todo List</h2>
+        <input type="text" id="Input" placeholder="Titulo...">
+        <button onclick="agregarElementos()" class="agrerarBtn">Agregar</button>
+    </header>
     
+    <ul class="Lista">
+        <li>Comprar pan</li>
+        <li>Hacer torta</li>
+        <li>Cortarme el pelo</li>
+    </ul>
 </body>
 </html>
