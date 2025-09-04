@@ -1,25 +1,36 @@
+let Lista = document.getElementById("Lista");
+let i;
+
+var close = document.getElementsByClassName("close");
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
 function agregarElementos() {
     let li = document.createElement("li");
     let valorInput = document.getElementById("Input").value;
     let inputText = document.createTextNode(valorInput);
     li.appendChild(inputText);
-
-    if (valorInput === '') {
-        alert("El valor del item no puede ser nulo");
-    } else {
-        Lista.appendChild(li);
-    }
+        if (valorInput === '') {
+            alert("El valor del item no puede ser nulo")
+        } else {
+            document.getElementById("Lista").appendChild(li);
+        }
     document.getElementById("Input").value = "";
-}
-    // 🔥 Agregamos botón Cerrar
-    let span = document.createElement("SPAN");
-    let txt = document.createTextNode("×"); // símbolo de cierre
-    span.className = "Cerrar";
+
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
-
-    // 🔥 Asignamos evento al nuevo botón
-    span.onclick = function() {
-        let div = this.parentElement;
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
         div.style.display = "none";
+      }
     }
+}
